@@ -1,0 +1,1 @@
+export interface EmailJob { id: string; userId: string; recipient: string; subject: string; body: string; scheduledAt: string; status: 'SCHEDULED' | 'PROCESSING' | 'SENT' | 'FAILED'; delayBetween: number; hourlyLimit: number; createdAt: string; updatedAt: string; bullmqJobId: string | null; starred: boolean; archived: boolean; }
